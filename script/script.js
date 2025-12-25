@@ -49,9 +49,10 @@ for (const seat of allSeat) {
 }
 
 
+
+// apply button function all
 const applyButton = getElement_Id("apply")
 applyButton.addEventListener('click', applyButtonFuc)
-
 
 function applyButtonFuc() {
     const conditionFor15 = 1650;
@@ -101,6 +102,9 @@ function applyButtonFuc() {
 
 }
 
+
+
+// utility function
 function getElement_Id(elementId) {
     const element = document.getElementById(elementId);
     return element;
@@ -117,7 +121,6 @@ function addHidden(element) {
     element.setAttribute("hidden", true);
     disableButton()
 }
-
 function disableButton() {
     const allSeat2 = document.querySelectorAll(".seat1")
     for (const button of allSeat2) {
@@ -125,7 +128,6 @@ function disableButton() {
         button.style.cursor = "not-allowed";
     }
 }
-
 
 
 
